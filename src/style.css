@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d7e3fc;
+}
+
+
+.container{
+  display:flex;
+  width:40%;
+  flex-flow: column;
+  border: none;
+  border-radius: 2%;
+  height: 80vh;
+  padding: 10px;
+  background-color:white;
+  overflow: auto;
+}
+
+@media(max-width:550px){
+  .container{
+  width: 80%;
+
+  }
+}
+
+h1{
+  text-align: center;
+  font-size: 30px !important;
+  color: #3e92cc;
+  font-weight: bold;
+  margin-bottom: 40px !important;
+}
+
+.todoForm{
+  width: 95%;
+  margin-left: 2%;
+  display: flex;
+  justify-content:center;
+}
+
+.todos{
+
+text-align: center;  
+justify-content: space-between;
+    position: fixed;
+    bottom: 11%;
+    margin-left: -30%;
+    width: 100%;
+
+}
+
+
+.todo{
+    margin: 12px !important;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #3e92cc;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: black;
+  margin: 10px 0;
+  border: 20px !important;
+  color: white;
+
+
+
+}
+
+.todo:hover{
+ background-color: #a0c4ff;
+
+}
+
+
+.todo-text{
+  flex: 1;
+}
+
+
+input{
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px !important;
+  margin:  10px 20px 10px 20px ;
+  border: none;
+  width: 80%;
+}
+
+input:focus,button:focus{
+  outline: none;
+}
+
+button{
+    border:  black!important;
+    border-radius: 10px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+color: #3e92cc !important;}
+
+
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nth-todo{
+    color: #3e92cc;
+    text-align: center;
+    margin: 20px;
+}
+
+.check-close{
+    margin: 6px;
+}
+.edit-close{
+    margin: 6px;
+}
+.check{
+    margin: 30p !important;
+
+}
+
+
+    
+    
