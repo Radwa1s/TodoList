@@ -2,7 +2,7 @@ import { CheckboxGroup, Stack } from "@chakra-ui/react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { addTodo } from "../store/Action || Reducer";
+import { addTodo } from "../store/ActionReducer";
 import { TodoItem } from "./TodoItem";
 
 const TodoList = () => {
@@ -55,7 +55,13 @@ const TodoList = () => {
         <div className="nth-todo">
           {count === 0 && <p>You don't have to do anything Yaaaay!</p>}
         </div>
-        <ul className="todos" style={{ listStyleType: "none", marginTop: 20 }}>
+        <ul
+          className="todos"
+          style={{
+            listStyleType: "none",
+            marginTop: 20,
+          }}
+        >
           <button onClick={() => setFilterKey("all")}>
             <li className="todo">All ({count})</li>
           </button>

@@ -1,7 +1,7 @@
 import { Checkbox } from "@chakra-ui/react";
 import { useState } from "react";
 import { CloseIcon, EditIcon, CheckIcon } from "@chakra-ui/icons";
-import { removeTodo, setStatus, editTodo } from "../store/Action || Reducer";
+import { removeTodo, setStatus, editTodo } from "../store/ActionReducer";
 import { useDispatch } from "react-redux";
 
 import "../style.css";
